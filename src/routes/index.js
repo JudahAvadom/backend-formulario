@@ -2,6 +2,11 @@ const express = require("express");
 const Router = express.Router();
 const Usuarios = require("../models/Usuarios")
 
+Router.route("/")
+    .get(async(req,res)=>{
+        res.json("Api is running")
+    })
+
 Router.route("/lista")
     .get(async(req,res)=>{
         const list = await Usuarios.findAll();
