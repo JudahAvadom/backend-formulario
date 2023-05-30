@@ -1,3 +1,22 @@
 @api = http://localhost:4000
 
-POST http://localhost:4000/save
+### Obtener lista de usuarios
+GET  http://localhost:4000/lista
+
+### Crear usuario
+POST http://localhost:4000/usuario
+Content-Type: application/json
+
+{
+    "nombre":"Sarah",
+    "apellido":"Rodriguez",
+    "pais":"Venezuela"
+}
+
+### Borrar usario
+DELETE http://localhost:4000/usuario
+Content-Type: application/json
+
+{
+    "usuario_id":3
+}
