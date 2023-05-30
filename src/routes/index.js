@@ -12,6 +12,7 @@ Router.route("/usuario")
     .post(async(req,res)=>{
         // Guardar usuario
         const {nombre,apellido,pais} = req.body
+        console.log(req.body);
         Usuarios.create({
             nombre,
             apellido,

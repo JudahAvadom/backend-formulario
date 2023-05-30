@@ -20,3 +20,7 @@ Content-Type: application/json
 {
     "usuario_id":3
 }
+
+
+### Paises
+GET https://restcountries.com/v3.1/all?fields=name,flags`
