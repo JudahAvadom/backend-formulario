@@ -2,8 +2,8 @@ const { Sequelize } = require('sequelize');
 const dotenv = require("dotenv").config();
 
 const DATABASE = process.env.DATABASE || 'formulario'
-const USER_DB = process.env.USER_DB || 'postgres'
-const PASSWORD_DB = process.env.PASSWORD_DB || 'password'
+const USER_DB = process.env.USER_DB || 'judah'
+const PASSWORD_DB = process.env.PASSWORD_DB || 'Trapo99.'
 
 const sq = new Sequelize(DATABASE, USER_DB, PASSWORD_DB, {
     host: 'localhost',
