@@ -8,7 +8,10 @@ const IndexRouter = require("./routes/index")
 
 const PORT = process.env.PORT || 4000;
 
-app.use(cors())
+app.use(cors({
+    origin: 'https://lemon-glacier-0e51c7b10.3.azurestaticapps.net',
+    optionsSuccessStatus: 200
+}))
 app.use(express.json())
 app.use("/", IndexRouter)
 
